@@ -1,0 +1,20 @@
+﻿<Window x:Class="Cursedsach.TextEnter"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cursedsach"
+        mc:Ignorable="d"
+        Title="TextEnter" Height="200" Width="400" Background="Bisque">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="61*"  />
+            <RowDefinition Height="95*"  />
+            <RowDefinition Height="28*"  />
+        </Grid.RowDefinitions>
+        <TextBlock Text="Введите текст:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" FontFamily="Cascadia Code" Height="35" Width="228" />
+        <TextBox HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="380" Height="95" TextChanged="TextBox_TextChanged"/>
+        <Button HorizontalAlignment="Left" Grid.Row="2" Margin="310,3,0,2" Width="80" FontFamily="Cascadia Code" Content="Продолжить" Background="LightSkyBlue" Click="Button_Click_Continue" />
+
+    </Grid>
+</Window>
